@@ -1,0 +1,5 @@
+bak/*
+media/*
+*.pyc
+list
+!.gitkeep
