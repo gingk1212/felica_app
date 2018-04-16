@@ -1,0 +1,12 @@
+[Unit]
+Description=Felica read and post program
+After=syslog.target
+[Service]
+ExecStart=/opt/felica_app/python/felica-rpd.py
+Restart=always
+RestartSec=10s
+Type=forking
+PIDFile=/var/run/felica_app/felica-rpd.pid
+User=felica-app
+[Install]
+WantedBy=multi-user.target
